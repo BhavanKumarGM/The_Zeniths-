@@ -28,11 +28,10 @@ Welcome to the **Local Food Marketplace**, a digital platform that **connects sm
 
 - **Frontend:** React.js + Tailwind CSS  
 - **Backend:** Node.js + Express.js  
-- **Database:** MongoDB / PostgreSQL  
+- **Database:** SuparBase
 - **Mapping:** Google Maps API / Leaflet.js  
 - **Auth:** JWT / OAuth2  
-- **Deployment:** AWS / Heroku  
-
+- **Deployment:** Rocket new
 ---
 
 ## ⚡ **Installation & Setup**  
