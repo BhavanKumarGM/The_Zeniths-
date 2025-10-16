@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FEFEFE; /* white */
+    --color-foreground: #1A1A1A; /* gray-900 */
+    --color-border: rgba(135, 169, 107, 0.2); /* sage-green-20 */
+    --color-input: #F8F6F3; /* warm-neutral */
+    --color-ring: #2D5016; /* deep-forest-green */
+    --color-card: #FEFEFE; /* white */
+    --color-card-foreground: #1A1A1A; /* gray-900 */
+    --color-popover: #FEFEFE; /* white */
+    --color-popover-foreground: #1A1A1A; /* gray-900 */
+    --color-muted: #F8F6F3; /* warm-neutral */
+    --color-muted-foreground: #666666; /* gray-600 */
+
+    /* Brand Colors */
+    --color-primary: #2D5016; /* deep-forest-green */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #8B4513; /* rich-soil-brown */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    --color-accent: #FF6B35; /* harvest-orange */
+    --color-accent-foreground: #FFFFFF; /* white */
+
+    /* Status Colors */
+    --color-success: #4A7C59; /* growing-green */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #D2691E; /* amber-alert */
+    --color-warning-foreground: #FFFFFF; /* white */
+    --color-error: #B22222; /* concerned-red */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #B22222; /* concerned-red */
+    --color-destructive-foreground: #FFFFFF; /* white */
+
+    /* Additional Brand Colors */
+    --color-brand-sage: #87A96B; /* sage-green */
+    --color-brand-harvest-gold: #D4A574; /* warm-harvest-gold */
+    --color-brand-surface: #F8F6F3; /* warm-neutral */
+    --color-text-secondary: #666666; /* gray-600 */
+    --color-conversion-accent: #D4A574; /* warm-harvest-gold */
+    --color-trust-builder: #2D5016; /* deep-forest-green */
+    --color-natural-cream: #FEFCF8; /* natural-cream */
+    --color-warm-gray: #5A5A5A; /* warm-gray */
+    --color-golden-harvest: #B8860B; /* golden-harvest */
+
+    /* Spacing System - Golden Ratio */
+    --spacing-xs: 8px;
+    --spacing-sm: 13px;
+    --spacing-md: 21px;
+    --spacing-lg: 34px;
+    --spacing-xl: 55px;
+
+    /* Typography */
+    --font-headline: 'Inter', sans-serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+    --font-accent: 'Crimson Text', serif;
+
+    /* Shadows */
+    --shadow-organic: 0 4px 20px rgba(45, 80, 22, 0.12);
+    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-conversion: 0 8px 32px rgba(45, 80, 22, 0.15);
+
+    /* Border Radius */
+    --radius-organic: 12px 8px 10px 14px;
+    --radius-subtle: 6px;
+    --radius-standard: 8px;
+
+    /* Animation Timing */
+    --timing-organic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --timing-ease-out: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+
+  .font-accent {
+    font-family: var(--font-accent);
+  }
+}
+
+@layer components {
+  /* Organic Button Morphing */
+  .btn-organic {
+    border-radius: var(--radius-organic);
+    transition: all 0.3s var(--timing-organic);
+  }
+
+  .btn-organic:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-conversion);
+  }
+
+  /* Seasonal Gradient Overlays */
+  .gradient-seasonal {
+    background: linear-gradient(45deg, #87A96B 0%, #2D5016 100%);
+    background-blend-mode: multiply;
+  }
+
+  /* Organic Shadows */
+  .shadow-organic {
+    box-shadow: var(--shadow-organic);
+  }
+
+  .shadow-conversion {
+    box-shadow: var(--shadow-conversion);
+  }
+
+  /* Micro-seasonal Animations */
+  @keyframes seasonal-pulse {
+    0%, 100% { 
+      opacity: 0.8; 
+      transform: scale(1); 
+    }
+    50% { 
+      opacity: 1; 
+      transform: scale(1.05); 
+    }
+  }
+
+  .animate-seasonal {
+    animation: seasonal-pulse 0.8s ease-in-out infinite;
+  }
+
+  /* Growing Connection Animation */
+  @keyframes grow-connection {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+    100% {
+      stroke-dasharray: 100 0;
+    }
+  }
+
+  .animate-grow-connection {
+    animation: grow-connection 2s var(--timing-organic) forwards;
+  }
+
+  /* Organic Texture Backgrounds */
+  .bg-soil-texture {
+    background-image: radial-gradient(circle at 25% 25%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 75% 75%, rgba(45, 80, 22, 0.08) 0%, transparent 50%);
+  }
+
+  .bg-soil-texture:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s var(--timing-organic);
+  }
+
+  /* Trust Signal Styling */
+  .trust-signal {
+    color: var(--color-trust-builder);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-subtle);
+    transition: all 0.3s ease-out;
+  }
+
+  .trust-signal:hover {
+    box-shadow: var(--shadow-organic);
+    transform: translateY(-1px);
+  }
+
+  /* Conversion CTA Styling */
+  .cta-conversion {
+    background-color: var(--color-conversion-accent);
+    color: var(--color-primary-foreground);
+    border-radius: var(--radius-organic);
+    transition: all 0.3s var(--timing-organic);
+  }
+
+  .cta-conversion:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-conversion);
+    background-color: var(--color-golden-harvest);
+  }
+
+  /* Farmer Portrait Masking */
+  .farmer-portrait {
+    clip-path: polygon(0% 0%, 95% 0%, 100% 90%, 5% 100%);
+    box-shadow: var(--shadow-conversion);
+  }
+
+  /* Seasonal Color Transitions */
+  .seasonal-transition {
+    transition: all 0.6s ease-in-out;
+  }
+}
+
+@layer utilities {
+  /* Spacing Utilities - Golden Ratio */
+  .space-xs { margin: var(--spacing-xs); }
+  .space-sm { margin: var(--spacing-sm); }
+  .space-md { margin: var(--spacing-md); }
+  .space-lg { margin: var(--spacing-lg); }
+  .space-xl { margin: var(--spacing-xl); }
+
+  .p-xs { padding: var(--spacing-xs); }
+  .p-sm { padding: var(--spacing-sm); }
+  .p-md { padding: var(--spacing-md); }
+  .p-lg { padding: var(--spacing-lg); }
+  .p-xl { padding: var(--spacing-xl); }
+
+  /* Text Color Utilities */
+  .text-brand-sage { color: var(--color-brand-sage); }
+  .text-conversion { color: var(--color-conversion-accent); }
+  .text-trust { color: var(--color-trust-builder); }
+  .text-warm-gray { color: var(--color-warm-gray); }
+
+  /* Background Utilities */
+  .bg-natural-cream { background-color: var(--color-natural-cream); }
+  .bg-brand-surface { background-color: var(--color-brand-surface); }
+  .bg-conversion { background-color: var(--color-conversion-accent); }
+  .bg-trust { background-color: var(--color-trust-builder); }
+
+  /* Border Utilities */
+  .border-organic { border-radius: var(--radius-organic); }
+  .border-subtle { border-radius: var(--radius-subtle); }
+
+  /* Animation Utilities */
+  .timing-organic { transition-timing-function: var(--timing-organic); }
+  .timing-ease-out { transition-timing-function: var(--timing-ease-out); }
+}
