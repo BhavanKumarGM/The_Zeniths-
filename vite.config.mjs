@@ -18,4 +18,8 @@ export default defineConfig({
     strictPort: true,
     allowedHosts: ['.amazonaws.com', '.builtwithrocket.new']
   }
+<<<<<<< HEAD
 });
+=======
+}); 
+>>>>>>> e183fd770b632b95ad59e425dfd154da3cc1d27e

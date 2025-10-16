@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme - Earthy/Organic colors */
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+  --color-border: #e5e7eb;
+  --color-input: #f9fafb;
+  --color-ring: #2d5016;
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1a1a;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a1a;
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #6b7280;
+  
+  /* Brand colors */
+  --color-primary: #2d5016; /* Deep forest green */
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #8b4513; /* Rich soil brown */
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #ff8c00; /* Harvest orange */
+  --color-accent-foreground: #ffffff;
+  
+  /* Status colors */
+  --color-success: #22c55e;
+  --color-success-foreground: #ffffff;
+  --color-warning: #f59e0b;
+  --color-warning-foreground: #ffffff;
+  --color-error: #ef4444;
+  --color-error-foreground: #ffffff;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  
+  /* Extended brand colors */
+  --color-brand-sage: #87a96b;
+  --color-brand-harvest-gold: #daa520;
+  --color-brand-surface: #f9fafb;
+  --color-text-secondary: #6b7280;
+  --color-conversion-accent: #daa520;
+  --color-trust-builder: #2d5016;
+  --color-natural-cream: #faf7f0;
+  --color-warm-gray: #9ca3af;
+  --color-golden-harvest: #b8860b;
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --color-background: #0f1419;
+  --color-foreground: #f9fafb;
+  --color-border: #374151;
+  --color-input: #1f2937;
+  --color-ring: #87a96b;
+  --color-card: #1f2937;
+  --color-card-foreground: #f9fafb;
+  --color-popover: #1f2937;
+  --color-popover-foreground: #f9fafb;
+  --color-muted: #374151;
+  --color-muted-foreground: #9ca3af;
+  
+  --color-primary: #87a96b;
+  --color-primary-foreground: #0f1419;
+  --color-secondary: #d2691e;
+  --color-secondary-foreground: #0f1419;
+  --color-accent: #ffa500;
+  --color-accent-foreground: #0f1419;
+  
+  --color-brand-surface: #1f2937;
+  --color-natural-cream: #1f2937;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: inherit;
+  margin: unset;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-sage);
+}
