@@ -5,6 +5,11 @@ Welcome to the **Local Food Marketplace**, a digital platform that **connects sm
 
 ---
 
+## 🔗 **Live Demo / Website**  
+👉 [Visit FarmLink](https://farmlink-pljrr29.public.builtwithrocket.new)  
+
+---
+
 ## 🚀 **Features**  
 
 - **👨‍🌾 Farmer Profiles & Catalogs:** Showcase farm details, products, pricing, and availability.  
