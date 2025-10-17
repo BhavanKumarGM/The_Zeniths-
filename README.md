@@ -66,49 +66,17 @@ The platform also integrates **local language models**, **AI-based disease and p
 | **Hosting & Deployment** | Rocket.new |
 | **Data Integration** | Government API feeds (Schemes & Alerts) |
 
----
+## 🌍 Future Enhancements
+
+- **Voice Assistants** – Voice guidance in local languages.  
+- **Drone Monitoring** – Real-time crop and soil analysis.  
+- **Blockchain Traceability** – Transparent supply chain verification.  
+- **AI Price Prediction** – Dynamic pricing based on demand and market trends.  
+- **Improved Delivery** – Optimized routes and real-time tracking.  
+- **Knowledge Hub Expansion** – Tutorials, webinars, and community forums.
 
 ## ⚡ Installation & Setup
-```bash
+
 # Clone the repository
 git clone https://github.com/your-username/local-food-marketplace.git
 
-# Navigate to project folder
-cd local-food-marketplace
-
-# Install dependencies
-npm install
-
-# Configure environment variables
-DB_URI=your_database_uri
-JWT_SECRET=your_secret_key
-
-# Run the development server
-npm run dev
-🌍 Future Enhancements
-Voice-Based Local Assistants
-
-Provide voice-enabled guidance for farmers in their native languages for easier access.
-
-Drone-Based Crop Monitoring
-
-Use drones for real-time soil analysis, pest detection, and crop health monitoring.
-
-Blockchain Traceability
-
-Implement blockchain for supply chain transparency and verification of organic produce.
-
-AI Price Prediction & Dynamic Pricing
-
-Use AI to predict optimal pricing based on demand, crop type, and market trends.
-
-Enhanced Delivery & Logistics
-
-Integrate route optimization and real-time tracking for faster and more efficient deliveries.
-
-Expanded Knowledge Hub
-
-Add tutorials, webinars, and community forums for farmer collaboration and learning.
-
-yaml
-Copy code
