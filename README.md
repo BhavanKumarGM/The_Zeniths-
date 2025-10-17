@@ -61,7 +61,7 @@ The platform also integrates **local language models**, **AI-based disease and p
 | **Backend** | Node.js, Express.js |
 | **Database** | Supabase |
 | **Mapping & Geo Tools** | Google Maps API / Leaflet.js |
-| **AI & ML Modules** | Local Language LLMs for chatbot & crop knowledge |
+| **AI & ML Modules** | API Key chatbot & crop knowledge |
 | **Hosting & Deployment** | Rocket.new |
 | **Data Integration** | Government API feeds (Schemes & Alerts) |
 
